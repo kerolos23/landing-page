@@ -1,0 +1,65 @@
+@use "../helper/mixin" as *;
+@use "../helper/var" as *;
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    .logo {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    nav {
+        ul {
+            display: flex;
+            gap: 1em;
+            position: relative;
+            list-style: none;
+            a{
+                font-weight: 400;
+                color: #696969;
+                text-decoration: none;
+                transition: .5s ease;
+                @include hover(#000);
+            }
+            .feature {
+                @extend %li-style;
+                left: -50px;
+            }
+            .company {
+                @extend %li-style;
+            }
+        }
+    }
+}
+.btm {
+    height: 2em;
+    display: flex;
+    min-width: 10em;
+    gap: 1.5em;
+    justify-content: center;
+    .log{
+        cursor: pointer;
+        @extend %log-style;
+        border: none;
+        color: #696969;
+        @include hover(#000);
+    }
+    .register {
+        cursor: pointer;
+        @extend %log-style;
+        padding: 0.3em 1em 0.3em 1em;
+        border: 1.9px solid #000;
+        border-radius: 0.8em;
+        @include hover(#000);
+    }
+}

@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.btm .log, .btm .register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #696969;
+}
+
+.links nav ul .feature, .links nav ul .company {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 999;
+  background: #fff;
+  padding: 1.5em;
+  gap: 0.5em;
+  width: 7em;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 1em;
+  box-shadow: 1px 0px 24px -6px #6f6f6f;
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  top: 1.7em;
+}
+.links nav ul .feature li, .links nav ul .company li {
+  font-weight: 900;
+}
+.links nav ul .feature li a, .links nav ul .company li a {
+  display: flex;
+  gap: 0.7em;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+}
+.links .logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.links nav ul {
+  display: flex;
+  gap: 1em;
+  position: relative;
+  list-style: none;
+}
+.links nav ul a {
+  font-weight: 400;
+  color: #696969;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.links nav ul a:hover {
+  color: #000;
+}
+.links nav ul .feature {
+  left: -50px;
+}
+.btm {
+  height: 2em;
+  display: flex;
+  min-width: 10em;
+  gap: 1.5em;
+  justify-content: center;
+}
+.btm .log {
+  cursor: pointer;
+  border: none;
+  color: #696969;
+}
+.btm .log:hover {
+  color: #000;
+}
+.btm .register {
+  cursor: pointer;
+  padding: 0.3em 1em 0.3em 1em;
+  border: 1.9px solid #000;
+  border-radius: 0.8em;
+}
+.btm .register:hover {
+  color: #000;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  padding: 2em 9em 2em 9em;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  position: relative;
+}
+.text h2 {
+  font-size: 4em;
+  font-weight: 900;
+  padding: 0;
+  margin: 0.6em 0 0.3em 0;
+}
+.text p {
+  font-size: 1em;
+  color: #696969;
+}
+.text button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9em;
+  height: 2.3em;
+  border: 1px solid #000;
+  border-radius: 0.7em;
+  margin-top: 1em;
+  background: transparent;
+  color: #696969;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.text button:hover {
+  color: #000;
+}
+.text .client {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: nowrap;
+  position: absolute;
+  bottom: 0;
+}
+
+.image {
+  display: flex;
+  width: 37%;
+  height: 31em;
+}
+.image img {
+  width: 100%;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+}/*# sourceMappingURL=main.css.map */
